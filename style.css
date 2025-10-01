@@ -75,11 +75,15 @@ a { color: inherit; text-decoration: none; }
   display: inline-grid; place-items: center;
   width: 40px; height: 40px; border-radius: 10px; border: 1px solid transparent;
   background: var(--surface);
+  position: relative; /* Untuk overlay icon */
   transition: transform var(--transition), border-color var(--transition), background var(--transition);
 }
 .icon-btn:hover { transform: translateY(-1px); border-color: color-mix(in oklab, var(--text) 14%, transparent); }
 .icon { width: 22px; height: 22px; fill: none; stroke: currentColor; stroke-width: 2; }
-.icon-moon, .icon-sun { position: absolute; }
+.icon-moon, .icon-sun { 
+  position: absolute; 
+  transition: opacity var(--transition);
+}
 :root.dark .icon-moon { opacity: 0; }
 :root.dark .icon-sun { opacity: 1; }
 .icon-sun { opacity: 0; }
