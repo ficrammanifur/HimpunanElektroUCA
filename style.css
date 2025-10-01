@@ -6,7 +6,7 @@
   --muted: #64748b;   /* abu sedang untuk teks sekunder */
   --surface: #f8fafc; /* permukaan terang */
 
-  --radius: 12px;
+  --radius: 14px;
   --shadow-sm: 0 1px 2px rgba(15, 23, 42, 0.06);
   --shadow-md: 0 6px 24px rgba(15, 23, 42, 0.12);
   --ring: 0 0 0 3px rgba(29, 78, 216, 0.25);
